@@ -150,7 +150,7 @@ def get_db_data():
 
 def make_mark_down():
     list = get_db_data()
-    str_f='\r\n#'+language + '  Stars 1000以内排名整理\r\n\r\n|ID|Name|Describe|Stars|\r\n|:---:|:---:|:---:|:---:|\r\n'
+    str_f='\r\n# '+language + '  Stars 1000以内排名整理\r\n\r\n|ID|Name|Describe|Stars|\r\n|:---:|:---:|:---:|:---:|\r\n'
     for dic in list[0:]:
         idint = dic["idint"]
         name = dic["name"]
