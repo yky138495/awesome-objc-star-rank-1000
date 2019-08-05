@@ -150,14 +150,14 @@ def get_db_data():
 
 def make_mark_down():
     list = get_db_data()
-    str_f=language + 'Stars 1000以内排名整理\n|ID|Name|Describe|Stars\n|---|---|---|---|\n'
+    str_f=language + 'Stars 1000以内排名整理<br/>|ID|Name|Describe|Stars<br/>|---|---|---|---|<br/>'
     for dic in list[0:]:
         idint = dic["idint"]
         name = dic["name"]
         link = dic["link"]
         star = dic["star"]
         des = dic["des"]
-        str_f=str_f+'|'+str(idint)+'|['+name+']('+link+')|'+des+'|'+star+'|\n'
+        str_f=str_f+'|'+str(idint)+'|['+name+']('+link+')|'+des+'|'+star+'|<br/>'
     return str_f
 
 def write_to_file(str_f):
