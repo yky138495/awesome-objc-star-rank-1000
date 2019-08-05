@@ -13,7 +13,7 @@ import hashlib
 
 language='Objective-C'
 stars='800'
-page_start=1
+page_start=100
 page_end=100
 l_a_start=0
 
@@ -22,6 +22,8 @@ url = 'https://github.com/search?utf8=%E2%9C%93&q=language%3A'+language + '+star
 
 db_base_path = './'
 file_dir = './'
+file_parent_dir = '../'
+
 base_url ='https://github.com'
 
 execute_str="CREATE TABLE rankDetail(\
@@ -116,17 +118,53 @@ def handle_request(h_url,p):
     return html_doc_b
 
 
-def get_db_data()
+def get_db_data():
     conn1 = sqlite3.connect(path_b)
     c1 = conn1.cursor()
-    strsql = "select * from rankDetail"
+    strsql = "select ID,name,link,star,des from rankDetail"
     list=[]
     try:
         c1.execute(strsql)
         conn1.commit()
+        for row in c1:
+            idint = row[0]
+            name = row[1]
+            link = row[2]
+            star = row[3]
+            des = row[4]
+            dic={
+                "idint":idint,
+                "name":name,
+                "link":link,
+                "star":star,
+                "des":des,
+            }
+            list.append(dic)
+
         conn1.close()
     except sqlite3.IntegrityError or sqlite3.OperationalError:
         conn1.close()
+
+    return list
+
+
+def make_mark_down():
+    list = get_db_data()
+    str_f=language + 'Stars 1000以内排名整理\n|ID|Name|Describe|Stars\n|---|---|---|---|\n'
+    for dic in list[0:]:
+        idint = dic["idint"]
+        name = dic["name"]
+        link = dic["link"]
+        star = dic["star"]
+        des = dic["des"]
+        str_f=str_f+'|'+str(idint)+'|['+name+']('+link+')|'+des+'|'+star+'|\n'
+    return str_f
+
+def write_to_file(str_f):
+    readme_dir =file_parent_dir + language + '/' + 'README.md'
+    with open(readme_dir, "w", encoding='utf-8') as f:
+        f.write(str(str_f))
+        f.close()
 
 
 if __name__ == "__main__":
@@ -137,4 +175,6 @@ if __name__ == "__main__":
         par_html(html_doc_b)
         time.sleep(2)
 
+    str_mark = make_mark_down()
+    write_to_file(str_mark)
 
