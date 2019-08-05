@@ -116,8 +116,21 @@ def handle_request(h_url,p):
     return html_doc_b
 
 
+def get_db_data()
+    conn1 = sqlite3.connect(path_b)
+    c1 = conn1.cursor()
+    strsql = "select * from rankDetail"
+    list=[]
+    try:
+        c1.execute(strsql)
+        conn1.commit()
+        conn1.close()
+    except sqlite3.IntegrityError or sqlite3.OperationalError:
+        conn1.close()
+
+
 if __name__ == "__main__":
-    path_b=db_base_path+"rank"+'.db'
+    path_b=db_base_path+"rank-"+language+'.db'
     creat_database(path_b)
     for p_n in range(page_start,page_end):
         html_doc_b = handle_request(url,p_n)
