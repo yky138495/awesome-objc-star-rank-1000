@@ -13,18 +13,21 @@ import hashlib
 
 language='Objective-C'
 stars='800'
-page_start=100
+page_start=1
 page_end=100
 l_a_start=0
 
 url = 'https://github.com/search?utf8=%E2%9C%93&q=language%3A'+language + '+stars%3A%3E'+stars+'&type='
 
-
+enable_proxy = True
 db_base_path = './'
 file_dir = './'
 file_parent_dir = '../'
 
 base_url ='https://github.com'
+
+proxy_base_url = 'http://118.24.52.95:5010/'
+#proxy_base_url = 'http://127.0.0.1:5010/'
 
 execute_str="CREATE TABLE rankDetail(\
 ID  INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\
@@ -32,6 +35,13 @@ name  TEXT UNIQUE,\
 link  TEXT,\
 des  TEXT,\
 star  TEXT);"
+
+
+def get_proxy():
+    return requests.get(proxy_base_url+"get/").content
+
+def delete_proxy(proxy):
+    requests.get(proxy_base_url+"delete/?proxy={}".format(proxy))
 
 #创建DB
 def creat_database(path):
@@ -65,57 +75,89 @@ def insert_data(data):
         conn1.close()
 
 def par_html(html):
-    soup_b=BeautifulSoup(html,'lxml')
-    p=l_a_start
-    a1_list=soup_b.find_all("li", class_="repo-list-item d-flex flex-column flex-md-row flex-justify-start py-4 public source")
+    if html:
+        soup_b=BeautifulSoup(html,'lxml')
+        p=l_a_start
+        a1_list=soup_b.find_all("li", class_="repo-list-item d-flex flex-column flex-md-row flex-justify-start py-4 public source")
+        for a0_text in a1_list[l_a_start:]:
+            p=p+1
+            print(str(p))
+            aa=a0_text.find("div", class_="col-12 col-md-8 pr-md-3")
+            str_b=a0_text.find("div", class_="pl-2 pl-md-0 text-right flex-auto min-width-0")
+            star_n=str_b.find("a",class_="muted-link")
+            star=star_n.text
+            name_h3=aa.find("h3")
+            a_link=name_h3.find("a", class_="v-align-middle")
+            link=base_url+a_link["href"]
 
-    for a0_text in a1_list[l_a_start:]:
-        p=p+1
-        print(str(p))
-        aa=a0_text.find("div", class_="col-12 col-md-8 pr-md-3")
-        str_b=a0_text.find("div", class_="pl-2 pl-md-0 text-right flex-auto min-width-0")
-        star_n=str_b.find("a",class_="muted-link")
-        star=star_n.text
-        name_h3=aa.find("h3")
-        a_link=name_h3.find("a", class_="v-align-middle")
-        link=base_url+a_link["href"]
+            name_author=a_link.text
+            name= name_author.split('/')[-1]
+            if name:
+                print(name)
+            else:
+                name=imageUrl.split('/')[-2]
 
-        name_author=a_link.text
-        name= name_author.split('/')[-1]
-        if name:
-            print(name)
+            des_n=aa.find("p", class_="col-12 col-md-9 d-inline-block text-gray mb-2 pr-4")
+            des=''
+            if des_n:
+                des=des_n.text
+
+            name=name.strip()
+            name.replace('\n','')
+            link=link.strip()
+            link.replace('\n','')
+            star=star.strip()
+            star.replace('\n','')
+            des=des.strip()
+            des=des.replace('\n','')
+            des=des.replace("'", "")
+
+            data_t={
+            "name":name,
+            "link":link,
+            "star":star,
+            "des":des,
+            }
+            insert_data(data_t)
+        if len(a1_list)<9:
+            return False
         else:
-            name=imageUrl.split('/')[-2]
+            return True
 
-        des_n=aa.find("p", class_="col-12 col-md-9 d-inline-block text-gray mb-2 pr-4")
-        des=''
-        if des_n:
-            des=des_n.text
 
-        name=name.strip()
-        name.replace('\n','')
-        link=link.strip()
-        link.replace('\n','')
-        star=star.strip()
-        star.replace('\n','')
-        des=des.strip()
-        des=des.replace('\n','')
-        des=des.replace("'", "")
-
-        data_t={
-        "name":name,
-        "link":link,
-        "star":star,
-        "des":des,
-        }
-        insert_data(data_t)
 
 def handle_request(h_url,p):
     url=h_url + '&p=' + str(p)
-    response_b =requests.get(url)
-    response_b.encoding="utf-8"
-    html_doc_b = response_b.text
-    return html_doc_b
+    # ....
+    retry_count = 2
+    proxy = get_proxy()
+    while retry_count > 0:
+        try:
+            print("http://{}".format(proxy))
+            response_b= ''
+            header={'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'}
+            proxies = {
+                                    'http':proxy,
+#                                'http': "http://{}".format(proxy),
+#                                'https': "https://{}".format(proxy)
+            }
+            if enable_proxy:
+                response_b =requests.get(url, proxies=proxies, timeout=10)
+                print(url)
+            else:
+                response_b =requests.get(url)
+
+
+            response_b.encoding="utf-8"
+            print(response_b)
+            html_doc_b = response_b.text
+            return html_doc_b
+            # 使用代理访问
+        except Exception:
+            retry_count -= 1
+    # 出错5次, 删除代理池中代理
+    delete_proxy(proxy)
+    return None
 
 
 def get_db_data():
@@ -160,9 +202,23 @@ def make_mark_down():
         str_f=str_f+'|'+str(idint)+'|['+name+']('+link+')|'+des+'|'+star+'\r\n'
     return str_f
 
+def os_mk_dir(path):
+    isExists=os.path.exists(path)
+    if not isExists:
+        os.makedirs(path)
+        return True
+    else:
+        return False
+
 def write_to_file(str_f):
-    readme_dir =file_parent_dir + language + '/' + 'README.md'
+    language_dir = file_parent_dir + language + '/'
+    language_root_readme= file_parent_dir + '/' + 'README.md'
+    readme_dir = language_dir + 'README.md'
+    os_mk_dir(language_dir)
     with open(readme_dir, "w", encoding='utf-8') as f:
+        f.write(str(str_f))
+        f.close()
+    with open(language_root_readme, "w", encoding='utf-8') as f:
         f.write(str(str_f))
         f.close()
 
@@ -172,8 +228,10 @@ if __name__ == "__main__":
     creat_database(path_b)
     for p_n in range(page_start,page_end):
         html_doc_b = handle_request(url,p_n)
-        par_html(html_doc_b)
-        time.sleep(2)
+        if par_html(html_doc_b):
+            time.sleep(2)
+        else:
+            break
 
     str_mark = make_mark_down()
     write_to_file(str_mark)
