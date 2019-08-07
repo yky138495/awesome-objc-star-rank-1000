@@ -482,3 +482,33 @@
 |477|[SGPlayer](https://github.com/libobjc/SGPlayer)|A powerful media player framework for iOS, macOS, and tvOS. Support 360° panorama video, VR video. RTMP streaming.|1.6k
 |478|[baker](https://github.com/Simbul/baker)|The HTML5 ebook framework to publish interactive books & magazines on iPad & iPhone using simply open web standards|1.6k
 |479|[XToDo](https://github.com/trawor/XToDo)|Xcode plugin to collect and list the `TODO`,`FIXME`,`???`,`!!!!`|1.6k
+|480|[XVim2](https://github.com/XVimProject/XVim2)|Vim key-bindings for Xcode 9|1.6k
+|481|[iOS-Slide-Menu](https://github.com/aryaxt/iOS-Slide-Menu)|iOS Slide Menu with ability to add both left and right menu, and built in gesture recognizer. Similar to Path and Fac…|1.6k
+|482|[TypeScript-React-Native-Starter](https://github.com/microsoft/TypeScript-React-Native-Starter)|A starter template for TypeScript and React Native with a detailed README describing how to use the two together.|1.6k
+|483|[Objective-C-RegEx-Categories](https://github.com/bendytree/Objective-C-RegEx-Categories)|NSRegularExpression extensions that make regular expressions easier in Objective-C, Swift, iOS, OSX|1.6k
+|484|[canabalt-ios](https://github.com/ericjohnson/canabalt-ios)|Open source release of Canabalt for iOS|1.6k
+|485|[smcFanControl](https://github.com/hholtmann/smcFanControl)|Control the fans of every Intel Mac to make it run cooler|1.6k
+|486|[MYBlurIntroductionView](https://github.com/MatthewYork/MYBlurIntroductionView)|A super-charged version of MYIntroductionView for building custom app introductions and tutorials.|1.6k
+|487|[OHAttributedLabel](https://github.com/AliSoftware/OHAttributedLabel)|UILabel that supports NSAttributedString|1.5k
+|488|[EasyReact](https://github.com/Meituan-Dianping/EasyReact)|Are you confused by the functors, applicatives, and monads in RxSwift and ReactiveCocoa? It doesnt matter, the conce…|1.5k
+|489|[RKDropdownAlert](https://github.com/cwRichardKim/RKDropdownAlert)|iOS / Objective C: an extremely simple UIAlertView alternative|1.5k
+|490|[MGSplitViewController](https://github.com/mattgemmell/MGSplitViewController)|A flexible, advanced split-view controller for iPad developers.|1.5k
+|491|[react-native-permissions](https://github.com/react-native-community/react-native-permissions)|Check and request user permissions in ReactNative (iOS and Android)|1.5k
+|492|[ASCIImage](https://github.com/cparnot/ASCIImage)|Create UIImage / NSImage instances with NSString and ASCII art|1.5k
+|493|[Dash-Plugin-for-Xcode](https://github.com/omz/Dash-Plugin-for-Xcode)|Plugin for Xcode to integrate the Dash documentation viewer app|1.5k
+|494|[expecta](https://github.com/specta/expecta)|A Matcher Framework for Objective-C/Cocoa|1.5k
+|495|[ColorArt](https://github.com/panicinc/ColorArt)|iTunes 11-style color matching code|1.5k
+|496|[Provisioning](https://github.com/chockenberry/Provisioning)|A Quick Look plug-in for .mobileprovision files|1.5k
+|497|[Tangram-iOS](https://github.com/alibaba/Tangram-iOS)|Tangram is a modular UI solution for building native page dynamically, including Tangram for Android, Tangram for iOS…|1.5k
+|498|[DZNPhotoPickerController](https://github.com/dzenbot/DZNPhotoPickerController)|A photo search/picker for iOS using popular image providers like 500px, Flickr, Instagram, Giphy, Google & Bing Images|1.5k
+|499|[iOSTraining](https://github.com/mixi-inc/iOSTraining)|Training course repository for iOS app development|1.5k
+|500|[JZNavigationExtension](https://github.com/JazysYu/JZNavigationExtension)|JZNavigationExtension integrates some convenient features for UINavigationController and easy to use.|1.5k
+|501|[react-native-webview](https://github.com/react-native-community/react-native-webview)|React Native Cross-Platform WebView|1.5k
+|502|[MZTimerLabel](https://github.com/mineschan/MZTimerLabel)|A handy class for iOS to use UILabel as a countdown timer or stopwatch just like in Apple Clock App.|1.5k
+|503|[MotionBlur](https://github.com/fastred/MotionBlur)|MotionBlur allows you to add motion blur effect to iOS animations.|1.5k
+|504|[uidevice-extension](https://github.com/erica/uidevice-extension)|Add functionality to UIDevice to distinguish between platforms like iPod touch 1G and 2G and iPhone|1.5k
+|505|[FLKAutoLayout](https://github.com/floriankugler/FLKAutoLayout)|UIView category which makes it easy to create layout constraints in code|1.5k
+|506|[Underscore.m](https://github.com/robb/Underscore.m)|A DSL for Data Manipulation|1.5k
+|507|[YYImage](https://github.com/ibireme/YYImage)|Image framework for iOS to display/encode/decode animated WebP, APNG, GIF, and more.|1.5k
+|508|[DownloadButton](https://github.com/PavelKatunin/DownloadButton)|Customizable App Store style download button|1.5k
+|509|[CBZSplashView](https://github.com/callumboddy/CBZSplashView)|Twitter style Splash Screen View. Grows to reveal the Initial view behind|1.5k
