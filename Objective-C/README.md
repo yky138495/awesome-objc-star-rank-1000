@@ -512,3 +512,63 @@
 |507|[YYImage](https://github.com/ibireme/YYImage)|Image framework for iOS to display/encode/decode animated WebP, APNG, GIF, and more.|1.5k
 |508|[DownloadButton](https://github.com/PavelKatunin/DownloadButton)|Customizable App Store style download button|1.5k
 |509|[CBZSplashView](https://github.com/callumboddy/CBZSplashView)|Twitter style Splash Screen View. Grows to reveal the Initial view behind|1.5k
+|510|[FeSpinner](https://github.com/NghiaTranUIT/FeSpinner)|Rocket Loader Collection for iOS app|1.5k
+|511|[VipVideo](https://github.com/iodefog/VipVideo)|各大网站vip视频免费观看 等 Mac版。付费电影，VIP会员剧等，去广告播放|1.5k
+|512|[UIView-AutoLayout](https://github.com/smileyborg/UIView-AutoLayout)|Deprecated in favor of PureLayout, which includes OS X support:|1.5k
+|513|[WeChat](https://github.com/zhengwenming/WeChat)|实现类似微信朋友圈或者QQ空间，评论回复，九宫格布局。处理键盘弹出后定位到当前点击的被评论人处。另：滑动时候FPS在57-60之间，纵享丝滑！|1.5k
+|514|[TOWebViewController](https://github.com/TimOliver/TOWebViewController)|A view controller class for iOS that allows users to view web pages directly within an app.|1.5k
+|515|[MVVMFramework](https://github.com/lovemo/MVVMFramework)|(OC版)总结整理下一个快速开发框架，以更优雅的方式写代码，做一个代码艺术家。分离控制器中的代码，已加入cell自适应高度，自动缓存网络请求代码，降低代码耦合，提高开发效率。|1.5k
+|516|[PPNetworkHelper](https://github.com/jkpang/PPNetworkHelper)|AFNetworking 3.x 与YYCache封装|1.5k
+|517|[HXPhotoPicker](https://github.com/SilenceLove/HXPhotoPicker)|照片/图片选择器 - 支持LivePhoto、GIF图片选择、3DTouch预览、在线下载iCloud上的资源、浏览网络图片 功能 Imitation weibo photo/image picker - support for Li…|1.5k
+|518|[ProvisionQL](https://github.com/ealeksandrov/ProvisionQL)|Quick Look plugin for apps and provisioning profile files|1.5k
+|519|[RACollectionViewReorderableTripletLayout](https://github.com/ra1028/RACollectionViewReorderableTripletLayout)|The custom collectionView layout that can perform reordering of cells by dragging it.|1.5k
+|520|[react-native-arkit](https://github.com/react-native-ar/react-native-arkit)|React Native binding for iOS ARKit|1.5k
+|521|[MAObjCRuntime](https://github.com/mikeash/MAObjCRuntime)|ObjC wrapper for ObjC runtime API|1.5k
+|522|[leaves](https://github.com/brow/leaves)|A page-turning interface for iOS apps|1.5k
+|523|[BlockAlertsAnd-ActionSheets](https://github.com/gpambrozio/BlockAlertsAnd-ActionSheets)|Beautifully done UIAlertView and UIActionSheet replacements inspired by TweetBot|1.5k
+|524|[CollectionViewClassifyMenu](https://github.com/ChenYilong/CollectionViewClassifyMenu)|CollectionView做的两级菜单，可以折叠第二级菜单|1.5k
+|525|[RTLabel](https://github.com/honcheng/RTLabel)|simple rich text display for iOS using html-like markups|1.5k
+|526|[FancyTabBar](https://github.com/marvelapp/FancyTabBar)|An expandable and customisable tabbar for iOS|1.5k
+|527|[cartool](https://github.com/steventroughtonsmith/cartool)|Export images from OS X / iOS .car CoreUI archives|1.5k
+|528|[TGCameraViewController](https://github.com/tdginternet/TGCameraViewController)|Custom camera with AVFoundation. Beautiful, light and easy to integrate with iOS projects.|1.4k
+|529|[JVFloatingDrawer](https://github.com/JVillella/JVFloatingDrawer)|An easy to use floating drawer view controller.|1.4k
+|530|[ProgressHUD](https://github.com/relatedcode/ProgressHUD)|ProgressHUD is a lightweight and easy-to-use HUD for iOS. (Objective-C)|1.4k
+|531|[LSAnimator](https://github.com/Lision/LSAnimator)|⛓ Easy to Read and Write Multi-chain Animations Lib in Objective-C and Swift.|1.4k
+|532|[NirZhihuDaily2.0](https://github.com/zpz1237/NirZhihuDaily2.0)|Swift精仿知乎日报iOS端|1.4k
+|533|[ZQCNN](https://github.com/zuoqing1988/ZQCNN)|一款比mini-caffe更快的Forward库，觉得好用请点星啊，400星公布快速人脸检测模型，500星公布106点landmark，600星公布人头检测模型，700星公布人脸检测套餐（六种pnet,两种rnet随意混合使用满足各种…|1.4k
+|534|[react-native-auto-updater](https://github.com/redbooth/react-native-auto-updater)|A library to manage dynamic updates to React Native apps. Available as an NPM Package for iOS and Android.|1.4k
+|535|[GSKStretchyHeaderView](https://github.com/gskbyte/GSKStretchyHeaderView)|A generic stretchy header for UITableView and UICollectionView|1.4k
+|536|[LiveReload](https://github.com/livereload/LiveReload)|LiveReload.app for Mac and Windows. See “develop” branch for the latest Windows release and LiveReload 3 progress. (N…|1.4k
+|537|[UzysAnimatedGifPullToRefresh](https://github.com/uzysjung/UzysAnimatedGifPullToRefresh)|Add PullToRefresh using animated GIF to any scrollView with just simple code|1.4k
+|538|[PSCollectionView](https://github.com/ptshih/PSCollectionView)|A simple open source implementation of a Pinterest Pinboard for iOS|1.4k
+|539|[GRMustache](https://github.com/groue/GRMustache)|Flexible and production-ready Mustache templates for MacOS Cocoa and iOS|1.4k
+|540|[APAddressBook](https://github.com/Alterplay/APAddressBook)|Easy access to iOS address book|1.4k
+|541|[couchbase-lite-ios](https://github.com/couchbase/couchbase-lite-ios)|Lightweight, embedded, syncable NoSQL database engine for iOS and MacOS apps.|1.4k
+|542|[CCHMapClusterController](https://github.com/choefele/CCHMapClusterController)|High-performance map clustering with MapKit for iOS and OS X. Integrate with 4 lines of code.|1.4k
+|543|[Sol](https://github.com/comyar/Sol)|☀️ Sol° beautifully displays weather information so you can plan your day accordingly. Check the weather in your cur…|1.4k
+|544|[AppDevKit](https://github.com/yahoo/AppDevKit)|AppDevKit is an iOS development library that provides developers with useful features to fulfill their everyday iOS a…|1.4k
+|545|[Concorde](https://github.com/contentful-labs/Concorde)|Download and decode progressive JPEGs on iOS.|1.4k
+|546|[MQTT-Client-Framework](https://github.com/novastone-media/MQTT-Client-Framework)|iOS, macOS, tvOS native ObjectiveC MQTT Client Framework|1.4k
+|547|[iHasApp](https://github.com/danielamitay/iHasApp)|The iHasApp iOS Framework allows you to detect installed apps on a users device.|1.4k
+|548|[MXParallaxHeader](https://github.com/maxep/MXParallaxHeader)|Simple parallax header for UIScrollView|1.4k
+|549|[iOSPlot](https://github.com/honcheng/iOSPlot)|Chart library for iOS|1.4k
+|550|[QBPopupMenu](https://github.com/questbeat/QBPopupMenu)|Customizable popup menu for iOS.|1.4k
+|551|[NSDate-Extensions](https://github.com/erica/NSDate-Extensions)|Practical real-world dates|1.4k
+|552|[A-GUIDE-TO-iOS-ANIMATION](https://github.com/KittenYang/A-GUIDE-TO-iOS-ANIMATION)|The source code of my new eBook —— A GUIDE TO IOS ANIMATION. Just click the next link to buy it|1.4k
+|553|[TABAnimated](https://github.com/tigerAndBull/TABAnimated)|A skeleton screen framework based on native for iOS. (一个由iOS原生组件映射出骨架屏的框架，包含快速植入，低耦合，兼容复杂视图等特点，提供国内主流骨架屏动画的加载方案，同时支持自…|1.4k
+|554|[YBImageBrowser](https://github.com/indulgeIn/YBImageBrowser)|iOS 图片浏览器 (支持视频) / Image browser for iOS.|1.4k
+|555|[NHBalancedFlowLayout](https://github.com/njdehoog/NHBalancedFlowLayout)|UICollectionViewLayout subclass for displaying items of different sizes in a grid without wasting any visual space. I…|1.4k
+|556|[react-native-orientation](https://github.com/yamill/react-native-orientation)|Listen to device orientation changes in react-native and set preferred orientation on screen to screen basis.|1.4k
+|557|[ControlPlane](https://github.com/dustinrue/ControlPlane)|ControlPlane - context-sensitive computing for OS X|1.4k
+|558|[JTGestureBasedTableViewDemo](https://github.com/jamztang/JTGestureBasedTableViewDemo)|(demo) Recreating the buttonless interaction pattern found in Clear for iPhone app|1.4k
+|559|[BugshotKit](https://github.com/marcoarment/BugshotKit)|iOS in-app bug reporting for developers and testers, with annotated screenshots and the console log.|1.4k
+|560|[ZYCornerRadius](https://github.com/liuzhiyi1992/ZYCornerRadius)|一句代码，圆角风雨无阻。A Category to make cornerRadius for UIImageView have no Offscreen-Rendered, be more efficiency.|1.4k
+|561|[BCGenieEffect](https://github.com/Ciechan/BCGenieEffect)|An OSX style genie effect inside your iOS app.|1.4k
+|562|[ios-image-filters](https://github.com/esilverberg/ios-image-filters)|photoshop-style filter interface for UIImage class on iOS to make instagram-style images|1.4k
+|563|[SVSegmentedControl](https://github.com/samvermette/SVSegmentedControl)|A UISwitch-like segmented control for your iOS app.|1.4k
+|564|[iOS7-day-by-day](https://github.com/shinobicontrols/iOS7-day-by-day)|Repo containing the sample projects associated with the iOS7 Day-by-Day blog series|1.4k
+|565|[Hosts.prefpane](https://github.com/specialunderwear/Hosts.prefpane)|a Cocoa GUI for /etc/hosts|1.4k
+|566|[WXSTransition](https://github.com/alanwangmodify/WXSTransition)|🍎 界面转场动画集|1.4k
+|567|[BAFluidView](https://github.com/antiguab/BAFluidView)|UIView that simulates a 2D view of a fluid in motion|1.4k
+|568|[Unused](https://github.com/jeffhodnett/Unused)|A Mac app for checking Xcode projects for unused resources|1.4k
+|569|[RGCardViewLayout](https://github.com/terminatorover/RGCardViewLayout)|This is a layout that clones the interaction of going through city "cards" in the City Guide App. (this app is #3 for…|1.4k

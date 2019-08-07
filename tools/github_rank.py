@@ -13,7 +13,7 @@ import hashlib
 
 language='Objective-C'
 stars='800'
-page_start=48
+page_start=64
 page_end=100
 l_a_start=0
 
