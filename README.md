@@ -1,7 +1,5 @@
-# awesome-objc-star-rank-1000
 
-
-## Objective-C  Stars 1000以内排名整理
+# Objective-C  Stars 1000以内排名整理
 
 |ID|Name|Describe|Stars|
 |:---:|:---:|:---:|:---:|
@@ -454,3 +452,33 @@
 |447|[YouTube-Music](https://github.com/steve228uk/YouTube-Music)|🎵 A Mac app wrapper for music.youtube.com|925
 |448|[UIBarButtonItem-Badge](https://github.com/mikeMTOL/UIBarButtonItem-Badge)|UIBarButtonItem+Badge|923
 |449|[iOS-5-Cookbook](https://github.com/erica/iOS-5-Cookbook)||923
+|450|[IOSAnimationDemo](https://github.com/yixiangboy/IOSAnimationDemo)|IOS动画总结|1.7k
+|451|[EBPhotoPages](https://github.com/EddyBorja/EBPhotoPages)|A photo gallery for iOS with a modern feature set. Similar features as the Facebook photo browser.|1.7k
+|452|[meituan](https://github.com/lookingstars/meituan)|高仿美团iOS版，版本号5.7。|1.7k
+|453|[QuincyKit](https://github.com/bitstadium/QuincyKit)|Live crash report management for iOS and Mac OS X. AppStore ready on iOS only!|1.7k
+|454|[LazyScrollView](https://github.com/alibaba/LazyScrollView)|An iOS ScrollView to resolve the problem of reusability in views.|1.7k
+|455|[FCModel](https://github.com/marcoarment/FCModel)|An alternative to Core Data for people who like having direct SQL access.|1.6k
+|456|[iOS-Images-Extractor](https://github.com/devcxm/iOS-Images-Extractor)|A Mac app to decode and extract images from iOS apps, support png/jpg/ipa/Assets.car files.|1.6k
+|457|[ARSegmentPager](https://github.com/AugustRush/ARSegmentPager)|segment tab controller with parallax Header|1.6k
+|458|[PLPlayerKit](https://github.com/pili-engineering/PLPlayerKit)|PLPlayerKit 是七牛推出的一款免费的适用于 iOS 平台的播放器 SDK，采用全自研的跨平台播放内核，拥有丰富的功能和优异的性能，可高度定制化和二次开发。|1.6k
+|459|[Textual](https://github.com/Codeux-Software/Textual)|Textual is an IRC client for OS X|1.6k
+|460|[TouchBarDemoApp](https://github.com/bikkelbroeders/TouchBarDemoApp)|Allows you to use your macOS Touch Bar from an iPad (through USB connection) or on-screen by pressing the Fn-key.|1.6k
+|461|[UICountingLabel](https://github.com/dataxpress/UICountingLabel)|Adds animated counting support to UILabel.|1.6k
+|462|[telegram](https://github.com/overtake/telegram)|Source code of deprecated Telegram for macos version|1.6k
+|463|[DAKeyboardControl](https://github.com/danielamitay/DAKeyboardControl)|DAKeyboardControl adds keyboard awareness and scrolling dismissal (ala iMessages app) to any view with only 1 line of…|1.6k
+|464|[SocialSharing-PhoneGap-Plugin](https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin)|👨‍❤️‍💋‍👨 Cordova plugin to share text, a file (image/PDF/..), or a URL (or all three) via the native sharing widget|1.6k
+|465|[quickstart-ios](https://github.com/firebase/quickstart-ios)|Firebase Quickstart Samples for iOS|1.6k
+|466|[ensembles](https://github.com/drewmccormack/ensembles)|A synchronization framework for Core Data.|1.6k
+|467|[GraphSketcher](https://github.com/graphsketcher/GraphSketcher)|A fast, simple graph drawing and data plotting app for OS X and iPad.|1.6k
+|468|[KTVHTTPCache](https://github.com/ChangbaDevs/KTVHTTPCache)|A powerful media cache framework.|1.6k
+|469|[DZNSegmentedControl](https://github.com/dzenbot/DZNSegmentedControl)|A drop-in replacement for UISegmentedControl for showing counts, to be used typically on a user profile|1.6k
+|470|[DLCImagePickerController](https://github.com/dmitric/DLCImagePickerController)|ImagePickerController with live filters, radial blur and more. Brought to you by Backspaces.|1.6k
+|471|[objc-TimesSquare](https://github.com/puls/objc-TimesSquare)|TimesSquare is an Objective-C calendar view for your apps.|1.6k
+|472|[simplenote-ios](https://github.com/Automattic/simplenote-ios)|Simplenote for iOS|1.6k
+|473|[Itsycal](https://github.com/sfsam/Itsycal)|Itsycal is a tiny calendar for your Macs menu bar. http://www.mowglii.com/itsycal|1.6k
+|474|[Today-Scripts](https://github.com/SamRothCA/Today-Scripts)|A widget for running scripts in the Today View in OS X Yosemites Notification Center|1.6k
+|475|[CorePhotoBroswerVC](https://github.com/CharlinFeng/CorePhotoBroswerVC)|快速集成高性能照片浏览器，支持本地及网络相册|1.6k
+|476|[HHRouter](https://github.com/lightory/HHRouter)|Yet another URL Router for iOS.|1.6k
+|477|[SGPlayer](https://github.com/libobjc/SGPlayer)|A powerful media player framework for iOS, macOS, and tvOS. Support 360° panorama video, VR video. RTMP streaming.|1.6k
+|478|[baker](https://github.com/Simbul/baker)|The HTML5 ebook framework to publish interactive books & magazines on iPad & iPhone using simply open web standards|1.6k
+|479|[XToDo](https://github.com/trawor/XToDo)|Xcode plugin to collect and list the `TODO`,`FIXME`,`???`,`!!!!`|1.6k
